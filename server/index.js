@@ -2,6 +2,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
+const session = require("express-session");
 
 const morgan = require("morgan");
 app.use(morgan("dev"));
@@ -13,6 +14,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api", require("./api")); // include our routes!
+
+app.use(
+  session({
+    secret: "a wildly insecure secret",
+    resave: false,
+    saveUninitialized: false,
+  })
+);
 
 app.get("/", (res) => {
   res.sendFile(path.join(__dirname, "index.html"));

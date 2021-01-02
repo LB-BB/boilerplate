@@ -6,6 +6,7 @@ const Main = () => {
     <div id="app">
       <p>Oh hello!</p>
       <p>I am your app baby!</p>
+      <p>you can call me petunia :3</p>
     </div>
   );
 };

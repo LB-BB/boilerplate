@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
-router.use("/prisons", require("./prisons")); // matches all requests to  /api/prisons/
-router.use("/prisoners", require("./prisoners")); // matches all requests to  /api/prisoners/
+router.use("/apples", require("./apples")); // matches all requests to  /api/apples/
+router.use("/oranges", require("./oranges")); // matches all requests to  /api/oranges/
 
 router.use((req, res, next) => {
   const err = new Error("API route not found!");

@@ -8,12 +8,12 @@ router.get("/", function (req, res, next) {
 router.post("/", function (req, res, next) {
   /* etc */
 });
-// matches PUT requests to /api/puppies/:prisonerId
-router.put("/:prisonerId", function (req, res, next) {
+// matches PUT requests to /api/puppies/:appleId
+router.put("/:appleId", function (req, res, next) {
   /* etc */
 });
-// matches DELETE requests to /api/puppies/:prisonerId
-router.delete("/:prisonerId", function (req, res, next) {
+// matches DELETE requests to /api/puppies/:appleId
+router.delete("/:appleId", function (req, res, next) {
   /* etc */
 });
 
